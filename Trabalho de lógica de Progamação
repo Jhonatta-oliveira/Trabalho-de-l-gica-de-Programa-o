@@ -1,0 +1,154 @@
+nome=("Sem dados")
+cpf=("Sem dados")
+endereco=("Sem dados")
+telefonef=("Sem dados")
+celular=("Sem dados")
+sexo=("Sem dados")
+data=("Sem dados")
+email=("Sem dados")
+emeila=("Sem dados")
+senha=("Sem dados")
+
+a=0
+i=0
+while i<50:
+	
+	print( "                MENU PRINCIPAL              ")
+	opcao=int(input(" 1 - Cadastro \n 2 - Ler \n 3 - Atualizar \n 4 - Deletar \n 5 - Sair \n \n OPÇÃO:  "))
+
+	if opcao==1:
+		i=i+1
+		print("\n-------------------CADASTRO----------------------")
+		nome = (input("\nNome: "))
+		cpf = (input("\nCPF: "))
+		endereco = (input("\nEndereço: "))
+		telefonef= (input("\nTelefone fixo: "))
+		celular = (input("\nCelular: "))
+		sexo = (input("\nSexo: "))
+		data = (input("\nData de nascimento: "))
+		email = (input("\nE-mail: "))
+		emaila= (input("\nConfirme seu E-mail: "))
+		if emaila != email:
+			print("E-MAIL INCORRETO")
+			emaila = (input("Digite novamente seu E-mail: "))
+		if emaila == email:
+			print("E-MAIL CORRETO")
+			
+			senha = (input("\nSenha: "))
+			senha_atual = (input("\nConfirme sua senha: "))
+		if senha_atual != senha:
+			print("SENHA INCORRETA")
+			senha_atual = (input("Digite novamente sua senha: "))
+		if senha_atual == senha:
+			print("SENHA CORRETA")
+			print("____________________")
+	if opcao==2:
+		i=i+1
+		print("\n---------------------------LER------------------------------")
+		print("Nome:",nome)
+		print("CPF:",cpf)
+		print("Endereço:",endereco)
+		print("Telefone fixo:",telefonef)
+		print("Celular:",celular)
+		print("Sexo:",sexo)
+		print("Data de nascimento:",data)
+		print("E-mail:",email)
+		print("Senha:",senha)
+		print("____________________")
+	 
+	   
+	if opcao==3:
+		i=i+1
+	
+		print("\n--------------QUAL INFORMAÇÃO GOSTARIA DE  ATUALIZAR?-------------")
+	
+		print(" 1 - Nome \n 2 - CPF \n 3 - Endereço \n 4 - Telefone Fixo \n 5 - Celular \n 6 - Sexo \n 7 - Data de nascimento \n 8 - E-mail \n 9 - Senha \n 10 - Daletar tudo \n")
+		x=int(input("Opção: "))
+
+		print("\n-------------------ATUALIZE SEU CADASTRO--------------------")
+		if x==1:
+			nome = (input("\nNome: "))
+		if x==2:
+			cpf = (input("\nCPF: "))
+		if x==3:
+			endereco = (input("\nEndereço: "))
+		if x==4:
+			telefonef= (input("\nTelefone Fixo: "))
+		if x==5:
+			celular = (input("\nCelular: "))
+		if x==6:
+			sexo = (input("\nSexo: "))
+		if x==7:
+			data= (input("\nData de nascimento: "))
+		if x==8:
+			email = (input("\nE-mail: "))
+			emaila= (input("\nConfirme seu E-mail: "))
+			if emaila == email:
+				print("E-MAIL CORRETO")
+			else:
+				print("E-MAIL INCORRETO")
+				emaila=(input("Digite novamente seu E-mail: "))
+		
+		if x==9:
+			senha = (input("\nSenha: "))
+		if x==10:
+			nome = (input("\nNome: "))
+			cpf = (input("\nCPF: "))
+			endereco = (input("\nEndereço: "))
+			telefonef= (input("\nTelefone fixo: "))
+			celular = (input("\nCelular: "))
+			sexo = (input("\nSexo: "))
+			data= (input("\nData de nascimento:"))
+			email = (input("\nE-mail: "))
+			senha = (input("\nSenha: "))
+			print("____________________")
+
+	if opcao==4:
+		i=i+1
+		print("\n--------------QUAL CAMPO VOCÊ DESEJA DELETAR?---------------")
+		print("1 - Nome \n 2 - CPF \n 3 - Endereço \n 4 - Telefone Fixo \n 5 - Celular \n 6 - Sexo \n 7 - Data de nascimento \n 8 - E-mail \n 9 - Senha \n 10 - Daletar tudo \n")
+		x = int(input("Escolha a sua opção: "))
+		if x ==1:
+			nome = (input("\nNome: "))
+		if x==2:
+			cpf = (input("\nCPF: "))
+		if x==3:
+			endereco = (input("\nEndereço: "))
+		if x==4:
+			telefonef = (input("\nTelefone Fixo: "))
+		if x==5:
+			celular = (input("\nCelular: "))
+		if x==6:
+			sexo = (input("\nSexo: "))
+		if x==7:
+			data = (input("\nData de nascimento: "))
+		if x==8:
+			email = (input("\nE-mail: "))
+		if x==9:
+			senha = (input("\nSenha: "))
+		if x==10:
+			nome = (input("\nNome: "))
+			cpf = (input("\nCPF: "))
+			endereco = (input("\nEndereço: "))
+			telefonef = (input("\nTelefone fixo: "))
+			celular = (input("\nCelular: "))
+			sexo = (input("\nSexo: "))
+			data = (input("\nData de nascimento: "))
+			email = (input("\nE-mail: "))
+			senha = (input("\nSenha: "))
+			print("____________________")
+	
+			
+	if opcao==5:
+		i=i+1
+		print("\n------------------DESEJA SAIR DO CADASTRO?------------------")
+		print("1 - SIM")
+		print("2 - NÃO")
+		es = int(input("Digite sua opção: "))
+		if  es==1:
+			print("Você saiu do cadastRo. ")
+		i=i+51
+	if opcao>=6:
+		print("\n!!!ESSA OPÇÃO NÃO EXISTE, DIGITE UMA OPÇÃO DO MENU PRINCIPAL!!!")
+		print("____________________")
+		i=i+1
